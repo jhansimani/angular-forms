@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test@gmail.com",
+      "mobileNumber": "9192344832",
+      "id": 1
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test@gmail.com",
+      "mobileNumber": "9192344833",
+      "id": 2
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test4@gmail.com",
+      "mobileNumber": "9192344832",
+      "id": 4
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test3@gmail.com",
+      "mobileNumber": "91923448323",
+      "id": 5
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test@gmail.com",
+      "mobileNumber": "9192344833",
+      "profileImage": "C:\\fakepath\\image1.jfif",
+      "id": 6
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test1@gmail.com",
+      "mobileNumber": "9192344832",
+      "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qlV828KTf23CTWY1akK2jJE0kcVAlGGisw&usqp=CAU",
+      "id": 7
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test3@gmail.com",
+      "mobileNumber": "9192344833",
+      "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qlV828KTf23CTWY1akK2jJE0kcVAlGGisw&usqp=CAU",
+      "DOB": "2022-06-23",
+      "id": 8
+    },
+    {
+      "firstName": "Jhansi",
+      "lastName": "Maradana",
+      "email": "test4@gmail.com",
+      "mobileNumber": "9192344832",
+      "profileImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qlV828KTf23CTWY1akK2jJE0kcVAlGGisw&usqp=CAU",
+      "DOB": "2022-06-17T06:52:34.683Z",
+      "id": 9
+    }
+  ]
+}

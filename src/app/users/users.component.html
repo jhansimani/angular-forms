@@ -1,0 +1,39 @@
+<div class="container">
+  <button class="btn btn-success" (click)="RouteToCreateUser()">
+    Create New User
+  </button>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>email</th>
+          <th>Mobile Number</th>
+          <th colspan="2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <!-- <td> <img [src]="user.profileImage" alt="{{user.profileImage}}"></td> -->
+          <td (click)="goTouser(user.id)">{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.mobileNumber }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="editUser(user)">
+              Update
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteUser(user.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->

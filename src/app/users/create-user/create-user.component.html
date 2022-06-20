@@ -1,0 +1,155 @@
+<form
+  [formGroup]="userForm"
+  class="container"
+  style="width: 50%"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="form-group mb-3">
+    <label for="FirstName" class="form-label">First Name</label>
+    <input
+      type="text"
+      id="FirstName"
+      formControlName="firstName"
+      class="form-control"
+    />
+  </div>
+
+  <div
+    *ngIf="
+      submitted ||
+      ((userForm.controls['firstName'].touched ||
+        userForm.controls['firstName'].dirty) &&
+        userForm.controls['firstName'].invalid)
+    "
+  >
+    <p *ngIf="userForm.controls['firstName'].errors?.['required']">
+      Please enter firstName
+    </p>
+  </div>
+
+  <!-- <div class="invalid-feedback" *ngIf="(userForm.get('firstName').touched || userForm.get('firstName').dirty ) && userForm.get('firstName').invalid">
+    <p *ngIf="userForm.get('firstName').errors?.['required']">Please enter firstName</p>
+  </div> -->
+  <div class="form-group mb-3">
+    <label for="LastName" class="form-label">Last Name</label>
+    <input
+      type="text"
+      id="LastName"
+      formControlName="lastName"
+      class="form-control"
+    />
+    <div
+      *ngIf="
+        submitted ||
+        ((userForm.controls['lastName'].touched ||
+          userForm.controls['lastName'].dirty) &&
+          userForm.controls['lastName'].invalid)
+      "
+    >
+      <p *ngIf="userForm.controls['lastName'].errors?.['required']">
+        Please enter lastName
+      </p>
+    </div>
+  </div>
+  <div class="form-group mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="text"
+      id="email"
+      formControlName="email"
+      class="form-control"
+    />
+    <div
+      *ngIf="
+        submitted ||
+        ((userForm.controls['email'].touched ||
+          userForm.controls['email'].dirty) &&
+          userForm.controls['email'].invalid)
+      "
+    >
+      <p *ngIf="userForm.controls['email'].errors?.['required']">
+        Please enter email
+      </p>
+      <p *ngIf="userForm.controls['email'].errors?.['email']">
+        Please enter correct email
+      </p>
+    </div>
+  </div>
+  <!-- <div class="form-group mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="text"
+      id="password"
+      formControlName="password"
+      class="form-control"
+    />
+    <div
+      *ngIf="
+        submitted ||
+        ((userForm.controls['password'].touched ||
+          userForm.controls['password'].dirty) &&
+          userForm.controls['password'].invalid)
+      "
+    >
+      <p *ngIf="userForm.controls['password'].errors?.['required']">
+        Please enter password
+      </p>
+    </div>
+  </div>
+  <div class="form-group mb-3">
+    <label for="confirmPassword" class="form-label">Confirm Password</label>
+    <input
+      type="text"
+      id="confirmPassword"
+      formControlName="confirmPassword"
+      class="form-control"
+    />
+    <div
+      *ngIf="
+        submitted ||
+        ((userForm.controls['confirmPassword'].touched ||
+          userForm.controls['confirmPassword'].dirty) &&
+          userForm.controls['confirmPassword'].invalid)
+      "
+    >
+      <p *ngIf="userForm.controls['confirmPassword'].errors?.['required']">
+        Please enter confirmPassword
+      </p>
+    </div>
+  </div> -->
+  <div class="form-group mb-3">
+    <label for="mobileNumber" class="form-label">mobile Number</label>
+    <input
+      type="text"
+      id="mobileNumber"
+      formControlName="mobileNumber"
+      class="form-control"
+    />
+    <div
+      *ngIf="
+        submitted ||
+        ((userForm.controls['mobileNumber'].touched ||
+          userForm.controls['mobileNumber'].dirty) &&
+          userForm.controls['mobileNumber'].invalid)
+      "
+    >
+      <p *ngIf="userForm.controls['mobileNumber'].errors?.['required']">
+        Please enter mobileNumber
+      </p>
+    </div>
+    <div>
+      <label for="profileImage" class="form-label">Profile Image</label>
+      <input
+        type="text"
+        id="profileImage"
+        formControlName="profileImage"
+        class="form-control"
+      />
+    </div>
+    
+  </div>
+  <div class="row" style="justify-content: space-between">
+    <button class="btn btn-success col">Submit</button>
+    <button class="btn btn-danger col" (click)="cancel()">cancel</button>
+  </div>
+</form>
